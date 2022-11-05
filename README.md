@@ -7,3 +7,6 @@ There are several techniques to automatically detect spam emails, although none 
 We have used Natural Language Processing techniques including stopwords removal, stemming, and ASCII character removal to create a more robust and non-repetitive corpus to train our vocabulary on. After these preprocessing steps, the training data is used to train several different models, including: logistic regression, naive bayes, support vector classifier, artificial neural network, and a long-short-term memory model (LSTM). 
 
 The results demonstrated excellent classification results for most of the models, however, overfitting is a major issue for NLP models. Upon training of all models, overfitting analysis was conducted by using K-fold cross-validation on the machine learning models (LR, NB, SVC) and implementing early stopping and dropout layers in training for the deep learning models (ANN, LSTM). These models were tested again to determine their efficacy. It was found that LSTM performed very well, and this model was later deployed to Streamlit to create a useable web application. 
+
+The final web application can be viewed and tested here: 
+https://neiltej-spam-email-detector-predictor-bhyv2q.streamlit.app/ 
